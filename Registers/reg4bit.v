@@ -1,14 +1,15 @@
-module d_ff_sync_reset(
-    input D,
+module reg4bit(
+    input [3:0] D,
     input CLK,
     input RESET,
-    output reg Q
+    output reg [3:0] Q
 );
 
 always @(posedge CLK) begin
 
     if (RESET)
-        Q <= 1'b0;
+        Q <= 4'b0000;
+
     else
         Q <= D;
 
