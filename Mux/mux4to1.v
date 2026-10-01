@@ -5,7 +5,6 @@ module mux4to1(
 );
 
 always @(*) begin
-    y = 1'b0;
     y = I[sel];
 end
 

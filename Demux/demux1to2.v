@@ -5,7 +5,6 @@ module demux1to2(
 );
 
 always @(*) begin
-    y = 2'b00;
     y[s] = I;
 end
 
